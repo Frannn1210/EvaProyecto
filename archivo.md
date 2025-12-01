@@ -147,3 +147,46 @@ Desde el Año 2 aplica inflación 3% anual a alquiler, servicios y sueldos. Mark
 #### Deuda
 
 Si se decide financiar una parte: préstamo S/ 70,000, tasa 18% anual, plazo 36 meses (sistema francés), comisión inicial 1%. Escudo fiscal = intereses × 29.5%. Si no se usará deuda, fijar estos valores en 0.
+
+### 6.3 Flujo de Caja Operativo (Costos e Ingresos Estimados)
+
+| Año | Pedidos | Ventas (S/.)    | Costos Variables (S/.) | Costos Fijos (S/.) | EBIT (S/.)    |
+| --- | ------- | --------------- | ---------------------- | ------------------ | ------------- |
+| 1   | 30000   | S/ 780,000.00   | 525000                 | 255600             | S/ -600.00    |
+| 2   | 39000   | S/ 1,044,420.00 | 702000                 | 263268             | S/ 79,152.00  |
+| 3   | 50700   | S/ 1,398,478.38 | 940485                 | 271166.04          | S/ 186,827.34 |
+| 4   | 65910   | S/ 1,872,562.55 | 1260199.2              | 279301.0212        | S/ 333,062.33 |
+| 5   | 85683   | S/ 2,507,361.26 | 1688811.93             | 287680.0518        | S/ 530,869.27 |
+
+### 6.4 Flujo de Caja de Inversión
+
+| Año | Concepto                                   | Monto (S/.) |
+| --- | ------------------------------------------ | ----------- |
+| 0   | Inversión Inicial                          | -124000     |
+| 1   | Depreciación/Amortización                  | -27500      |
+| 2   | Depreciación/Amortización                  | -27500      |
+| 3   | Depreciación/Amortización                  | -27500      |
+| 4   | Depreciación/Amortización                  | -27500      |
+| 5   | Depreciación/Amortización + Valor Residual | -27500      |
+
+### 6.5 Flujo de Caja de la Deuda
+
+| Año | Préstamo Recibido | Amortización Capital | Intereses | Servicio Deuda Total (-) | Escudo Fiscal (29.5%) |
+| --- | ----------------- | -------------------- | --------- | ------------------------ | --------------------- |
+| 0   | 70000             |                      |           | -700                     |                       |
+| 1   |                   | 17020                | 12,560    | -29580                   | 3707                  |
+| 2   |                   | 20086                | 9,494     | -29580                   | 2800                  |
+| 3   |                   | 23704                | 5,876     | -29580                   | 1734                  |
+| 4   |                   |                      |           |                          |                       |
+| 5   |                   |                      |           |                          |                       |
+
+### 6.6 Flujo de Caja Financiero
+
+| Año | Flujo Económico | Préstamo (+) | Servicio Deuda (-) | Flujo Financiero |
+| --- | --------------- | ------------ | ------------------ | ---------------- |
+| 0   | -124000         | 70000        | -700               | -54700           |
+| 1   | -S/ 600.00      |              | -29,580            | -S/ 30,180.00    |
+| 2   | S/ 79,152.00    |              | -29,580            | S/ 49,572.00     |
+| 3   | S/ 186,827.34   |              | -29,580            | S/ 157,247.34    |
+| 4   | S/ 333,062.33   |              |                    | S/ 333,062.33    |
+| 5   | S/ 567,869.27   |              |                    | S/ 567,869.27    |
