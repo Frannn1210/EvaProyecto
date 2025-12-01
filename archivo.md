@@ -94,3 +94,56 @@ Con 80 empresas y 50 personas por empresa, esperamos que el 15% de los colaborad
 | Año 3 | Estabilidad financiera   | Alcanzar punto de equilibrio, asegurar flujo de caja positivo y mantener satisfacción del cliente.                                              |
 | Año 4 | Mejora continua          | Fortalecer la app con mejoras sencillas (como historial de pedidos o encuestas de satisfacción) y aumentar pedidos por cliente.                 |
 | Año 5 | Consolidación            | Ser reconocidos en Lima como un emprendimiento confiable de almuerzos saludables para oficinas, manteniendo crecimiento estable y rentabilidad. |
+
+### 6.2 Supuestos Clave Utilizados
+
+#### Demanda y Precio
+
+Operaremos con 80 empresas y 50 personas por empresa (total 4,000 elegibles). Suponemos adopción 15% (≈600 usuarios que compran) y frecuencia 1.25 pedidos por semana durante 40 semanas activas al año (5 días laborales). El precio al cliente es S/ 22 por almuerzo y se mantiene fijo en S/ 22 durante los 5 años. Desde el Año 2 puede considerarse crecimiento de pedidos 5% anual, sin cambiar el precio.
+
+#### Costos Variables por Pedido
+
+El costo variable unitario se compone de: ingredientes S/ 11.80, empaque S/ 1.40, delivery tercerizado S/ 2.80, comisiones 4.5% del ticket (con S/ 22 ≈ S/ 1.00 por pedido) y otros S/ 0.50 (bolsas, mermas, servilletas). Para los años siguientes aplica inflación 3% anual sobre ingredientes y empaque. El delivery se mantiene en S/ 2.80 en A1–A2 y podría subir S/ 0.10 por año desde A3 si fuese necesario. Las comisiones se mantienen en 4.5% del mismo ticket S/ 22.
+
+#### Costos Fijos Mensuales
+
+- Alquiler de cocina (80–100 m²): S/ 5,500.
+- Servicios (agua, luz, gas, internet): S/ 1,200.
+- Planilla base: Jefe/a de cocina S/ 3,200; 2 cocineros/as S/ 1,800 c/u (S/ 3,600); 2 apoyos pre-prep/empaque S/ 1,200 c/u (S/ 2,400); coordinador/a de rutas y calidad S/ 1,800; atención al cliente part-time S/ 800.
+- Nutricionista por horas: S/ 800.
+- Marketing (redes/ads): S/ 1,200.
+- Nube y software: S/ 500.
+- Seguros/otros: S/ 300.
+
+Desde el Año 2 aplica inflación 3% anual a alquiler, servicios y sueldos. Marketing y nube pueden mantenerse en A1–A2 y crecer 5% anual desde A3 si hay retorno.
+
+#### Inversión Inicial
+
+- Equipos de cocina esenciales: S/ 55,000 (horno/conv., marmita/ollas, mesas inox, selladora)
+- Adecuaciones/mobiliario: S/ 10,000
+- Contenedores isotérmicos y utensilios: S/ 7,000
+- IT menor: S/ 5,000 (PC, 2 tablets, impresora térmica, balanzas)
+- MVP de software (app + backend + panel): S/ 18,000
+- Marca/diseño: S/ 1,000
+- Licencias y permisos: S/ 2,000
+- Imprevistos: S/ 6,000
+- Capital de trabajo inicial: S/ 20,000 (inventario, garantías, caja mínima)
+
+**Depreciación/amortización de referencia:** 5 años (equipos/adecuaciones/utensilios/IT) y 3 años (software); marca 10 años si la incluyes. Valores residuales a A5: equipos 20%, utensilios/IT 10%; adecuaciones/software/marca 0%. Recuperación de capital de trabajo: 100% al final.
+
+#### Capital de Trabajo y Políticas Operativas
+
+- Cobro inmediato en la app (cuentas por cobrar = 0 días)
+- Inventario promedio 7 días (rotación semanal)
+- Pagos a proveedores 15 días
+- La caja mínima está incluida dentro del capital de trabajo inicial S/ 20,000
+
+#### Impuestos y Tasas Financieras
+
+- Impuesto a la Renta: 29.5%
+- Inflación: 3% anual (para actualizar costos)
+- Tasa de descuento (VAN/TIR): 11%
+
+#### Deuda
+
+Si se decide financiar una parte: préstamo S/ 70,000, tasa 18% anual, plazo 36 meses (sistema francés), comisión inicial 1%. Escudo fiscal = intereses × 29.5%. Si no se usará deuda, fijar estos valores en 0.
