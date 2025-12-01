@@ -190,3 +190,49 @@ Si se decide financiar una parte: préstamo S/ 70,000, tasa 18% anual, plazo 36 
 | 3   | S/ 186,827.34   |              | -29,580            | S/ 157,247.34    |
 | 4   | S/ 333,062.33   |              |                    | S/ 333,062.33    |
 | 5   | S/ 567,869.27   |              |                    | S/ 567,869.27    |
+
+---
+
+## 7. Evaluación económica y financiera
+
+### 7.1 Costo del capital (COK y WACC)
+
+| Parámetro                              | Valor     |
+| -------------------------------------- | --------- |
+| COK (ke)                               | 11%       |
+| Deuda (D)                              | S/ 70,000 |
+| Patrimonio (E)                         | S/ 54,700 |
+| Tasa de impuesto                       | 29.5%     |
+| Costo de la deuda después de impuestos | 12.69%    |
+| WACC estimado                          | ≈ 12.0%   |
+
+Notas: WACC calculado con D/(D+E) y ke=11%; kd=18% neto de impuestos.
+
+### 7.2 Cálculo de indicadores
+
+#### 7.2.1 Económico (flujo económico, descuento WACC ≈ 12%)
+
+| Indicador                    | Resultado    |
+| ---------------------------- | ------------ |
+| VAN (12%)                    | ≈ S/ 605,652 |
+| TIR                          | ≈ 77%        |
+| PRD simple                   | ≈ 2.24 años  |
+| PRD descontado (12%)         | ≈ 2.45 años  |
+| IR (PV influjos / Inversión) | ≈ 5.89       |
+
+#### 7.2.2 Financiero (flujo al accionista, descuento COK 11%)
+
+| Indicador                   | Resultado    |
+| --------------------------- | ------------ |
+| VAN (11%)                   | ≈ S/ 629,707 |
+| TIR                         | ≈ 100%       |
+| PRD simple                  | ≈ 2.22 años  |
+| PRD descontado (11%)        | ≈ 2.36 años  |
+| IR (PV influjos / Aporte E) | ≈ 12.51      |
+
+### 7.3 Interpretación de resultados
+
+- VAN económico y financiero ampliamente positivos.
+- TIR muy superior a COK y WACC, indicando alta creación de valor.
+- Recuperación de la inversión antes del año 3 (descontada y no descontada).
+- Conclusión: el proyecto es viable con los supuestos actuales; los resultados dependen de sostener la demanda prevista y la disciplina en costos.
