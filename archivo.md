@@ -158,16 +158,16 @@ Si se decide financiar una parte: préstamo S/ 70,000, tasa 18% anual, plazo 36 
 | 4   | 65910   | S/ 1,872,562.55 | 1260199.2              | 279301.0212        | S/ 333,062.33 |
 | 5   | 85683   | S/ 2,507,361.26 | 1688811.93             | 287680.0518        | S/ 530,869.27 |
 
-### 6.4 Flujo de Caja de Inversión
+### 6.4 Flujo de caja económico
 
-| Año | Concepto                                   | Monto (S/.) |
-| --- | ------------------------------------------ | ----------- |
-| 0   | Inversión Inicial                          | -124000     |
-| 1   | Depreciación/Amortización                  | -27500      |
-| 2   | Depreciación/Amortización                  | -27500      |
-| 3   | Depreciación/Amortización                  | -27500      |
-| 4   | Depreciación/Amortización                  | -27500      |
-| 5   | Depreciación/Amortización + Valor Residual | -27500      |
+| Año | Utilidad Operativa (S/.) | Inversión (S/.) | Valor Residual (S/.) | Flujo Económico |
+| --- | ------------------------ | --------------- | -------------------- | --------------- |
+| 0   |                          | -124000         |                      | -124000         |
+| 1   | -S/.600.00               |                 |                      | -S/.600.00      |
+| 2   | S/.79,152.00             |                 |                      | S/.79,152.00    |
+| 3   | S/.186,827.34            |                 |                      | S/.186,827.34   |
+| 4   | S/.333,062.33            |                 |                      | S/.333,062.33   |
+| 5   | S/.567,869.27            |                 | 37000                | S/.567,869.27   |
 
 ### 6.5 Flujo de Caja de la Deuda
 
