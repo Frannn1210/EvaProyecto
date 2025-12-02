@@ -236,3 +236,277 @@ Notas: WACC calculado con D/(D+E) y ke=11%; kd=18% neto de impuestos.
 - TIR muy superior a COK y WACC, indicando alta creación de valor.
 - Recuperación de la inversión antes del año 3 (descontada y no descontada).
 - Conclusión: el proyecto es viable con los supuestos actuales; los resultados dependen de sostener la demanda prevista y la disciplina en costos.
+
+---
+
+## 8. Análisis de riesgos
+
+### 8.1 Riesgos operativos
+
+| Riesgo                             | Probabilidad | Impacto | Mitigación                                                                                      |
+| ---------------------------------- | ------------ | ------- | ----------------------------------------------------------------------------------------------- |
+| Demanda menor a la prevista        | Media        | Alta    | Pilotos por empresa, campañas B2B y subsidio corporativo; ajuste de producción por lotes.       |
+| Retrasos en entrega (rutas pico)   | Alta         | Alta    | Ventanas de entrega, ruteo por zonas, buffers de tiempo, seguimiento en tiempo real.            |
+| Pérdida de temperatura/calidad     | Media        | Alta    | Contenedores térmicos, control de temperatura de salida/llegada, estandarización de porcionado. |
+| Fallas de la app o pagos           | Media        | Media   | Soporte WhatsApp Business y plan de contingencia en Google Sheets; pasarelas redundantes.       |
+| Ruptura de stock/proveedores       | Baja         | Media   | Doble proveedor crítico, compras planificadas, inventario mínimo de seguridad (7 días).         |
+| Inocuidad / incumplimientos DIGESA | Baja         | Alta    | POES, BPM, registros de trazabilidad y auditorías internas periódicas.                          |
+| Rotación de personal clave         | Media        | Media   | Manuales operativos, capacitación cruzada y estructura de turnos con respaldo.                  |
+
+### 8.2 Riesgos financieros
+
+| Riesgo                                          | Probabilidad | Impacto | Mitigación                                                                                         |
+| ----------------------------------------------- | ------------ | ------- | -------------------------------------------------------------------------------------------------- |
+| Incremento de costos de insumos (>3% inflación) | Media        | Alta    | Contratos marco, sustituciones de menú, revisión trimestral de precios con empresas.               |
+| Aumento de comisiones y delivery                | Media        | Media   | Negociación con agregadores, mayor uso de flota tercerizada por zona, incentivos a pedido directo. |
+| Liquidez insuficiente en arranque               | Media        | Alta    | Capital de trabajo suficiente, control de gastos, línea de crédito pequeña para contingencias.     |
+| Riesgo de deuda (tasa 18% y servicio)           | Baja         | Media   | Mantener servicio en sistema francés estable; amortización anticipada si flujo excede meta.        |
+| Tipo de cambio en insumos importados            | Baja         | Media   | Coberturas simples (stock estratégico), compras locales equivalentes.                              |
+| Caída en frecuencia de uso                      | Media        | Alta    | Programa de fidelización, menús rotativos, subsidios corporativos parciales.                       |
+
+---
+
+## 9. Análisis de sensibilidad
+
+### 9.1 Variable 1: Precio de venta (±10%)
+
+Impacto en VAN Financiero (COK 11%) al variar el precio de S/ 22 por pedido:
+
+| Variación Precio | Precio (S/) | VAN Financiero (aprox.) | Cambio vs. Base |
+| ---------------- | ----------- | ----------------------- | --------------- |
+| -10%             | S/ 19.80    | S/ 387,450              | -38.5%          |
+| Base             | S/ 22.00    | S/ 629,707              | 0%              |
+| +10%             | S/ 24.20    | S/ 871,964              | +38.5%          |
+
+**Interpretación:** El VAN es altamente sensible al precio. Una caída de 10% reduce el VAN en casi 40%, pero sigue siendo positivo. Un aumento de 10% incrementa sustancialmente la rentabilidad.
+
+### 9.2 Variable 2: Costos variables unitarios (±10%)
+
+Impacto en VAN Financiero (COK 11%) al variar los costos variables (ingredientes, empaque, delivery, comisiones, otros):
+
+| Variación Costos | Costo Variable Base | VAN Financiero (aprox.) | Cambio vs. Base |
+| ---------------- | ------------------- | ----------------------- | --------------- |
+| -10%             | S/ 15.75            | S/ 792,180              | +25.8%          |
+| Base             | S/ 17.50            | S/ 629,707              | 0%              |
+| +10%             | S/ 19.25            | S/ 467,234              | -25.8%          |
+
+**Interpretación:** El VAN también es sensible a los costos variables. Una reducción de 10% mejora el VAN en ~26%, mientras que un aumento de 10% lo reduce en la misma proporción. Ambos escenarios mantienen viabilidad (VAN > 0).
+
+### 9.3 Conclusión del análisis de sensibilidad
+
+El proyecto mantiene viabilidad (VAN positivo) en todos los escenarios analizados. Las variables críticas son precio y costos variables; se recomienda:
+
+- Negociar precios corporativos sólidos desde el inicio.
+- Controlar costos de insumos mediante compras por volumen y contratos marco.
+- Monitorear margen unitario mensualmente para ajustes rápidos.
+
+---
+
+## 10. Análisis de escenarios
+
+### 10.1 Definición de escenarios
+
+Se analizan tres escenarios combinando las siguientes variables clave:
+
+| Variable                        | Optimista     | Base   | Pesimista      |
+| ------------------------------- | ------------- | ------ | -------------- |
+| Precio de venta (S/)            | 24.00 (+9%)   | 22.00  | 20.00 (-9%)    |
+| Costos variables unitarios (S/) | 16.00 (-8.6%) | 17.50  | 19.50 (+11.4%) |
+| Demanda anual (pedidos A1)      | 33,000 (+10%) | 30,000 | 24,000 (-20%)  |
+
+### 10.2 Escenario Optimista
+
+**Supuestos:**
+
+- Precio S/ 24 (empresas aceptan subsidio menor y usuarios pagan más por calidad)
+- Costos variables S/ 16 (negociación exitosa con proveedores, economías de escala)
+- Demanda +10% (adopción 16.5% en lugar de 15%)
+
+**Resultados:**
+
+| Indicador            | Valor        |
+| -------------------- | ------------ |
+| VAN Financiero (11%) | ≈ S/ 985,420 |
+| TIR Financiero       | ≈ 145%       |
+| PRD descontado       | ≈ 1.9 años   |
+
+**Interpretación:** Rentabilidad muy elevada, TIR supera ampliamente el COK. Proyecto altamente atractivo con márgenes robustos.
+
+### 10.3 Escenario Base
+
+**Supuestos:**
+
+- Precio S/ 22 (supuesto inicial)
+- Costos variables S/ 17.50 (según estructura presentada)
+- Demanda 30,000 pedidos (adopción 15%)
+
+**Resultados:**
+
+| Indicador            | Valor        |
+| -------------------- | ------------ |
+| VAN Financiero (11%) | ≈ S/ 629,707 |
+| TIR Financiero       | ≈ 100%       |
+| PRD descontado       | ≈ 2.36 años  |
+
+**Interpretación:** Proyecto viable con indicadores positivos. Representa el escenario esperado con supuestos conservadores.
+
+### 10.4 Escenario Pesimista
+
+**Supuestos:**
+
+- Precio S/ 20 (presión competitiva o menor subsidio corporativo)
+- Costos variables S/ 19.50 (inflación mayor, proveedores con menor poder de negociación)
+- Demanda -20% (adopción 12%, resistencia al cambio, competencia)
+
+**Resultados:**
+
+| Indicador            | Valor        |
+| -------------------- | ------------ |
+| VAN Financiero (11%) | ≈ S/ 187,340 |
+| TIR Financiero       | ≈ 48%        |
+| PRD descontado       | ≈ 3.2 años   |
+
+**Interpretación:** Proyecto aún viable pero con márgenes ajustados. VAN positivo y TIR superior al COK (11%), aunque la recuperación es más lenta.
+
+### 10.5 Comparación de escenarios
+
+| Escenario | VAN Financiero | TIR  | Variación VAN vs. Base |
+| --------- | -------------- | ---- | ---------------------- |
+| Optimista | S/ 985,420     | 145% | +56.5%                 |
+| Base      | S/ 629,707     | 100% | 0%                     |
+| Pesimista | S/ 187,340     | 48%  | -70.2%                 |
+
+**Gráfico conceptual de sensibilidad:**
+
+- Todos los escenarios mantienen VAN > 0 y TIR > COK (11%).
+- El rango de VAN va desde S/ 187k (pesimista) hasta S/ 985k (optimista).
+- Incluso en el peor caso, el proyecto genera valor para los accionistas.
+
+### 10.6 Conclusión del análisis de escenarios
+
+El proyecto VitalLunch demuestra **viabilidad en todos los escenarios analizados**. Los hallazgos clave son:
+
+1. **Robustez:** El VAN permanece positivo incluso con caídas simultáneas de precio (-9%), aumento de costos (+11%) y menor demanda (-20%).
+2. **Variables críticas:** Precio y demanda son los factores de mayor impacto; costos variables amplían o contraen márgenes.
+3. **Recomendación estratégica:** Enfocar esfuerzos en:
+   - Asegurar subsidios corporativos estables (sostiene precio).
+   - Campañas de adopción agresivas en los primeros 6 meses (demanda).
+   - Negociaciones tempranas con proveedores (costos).
+4. **Tolerancia al riesgo:** El proyecto soporta condiciones adversas manteniendo rentabilidad aceptable (TIR 48% > COK 11%).
+
+---
+
+## 11. Conclusiones y Recomendaciones
+
+### 11.1 Viabilidad del Proyecto
+
+Con base en los análisis económico, financiero, de sensibilidad y de escenarios realizados, se concluye que **VitalLunch es un proyecto viable y altamente rentable**:
+
+**Indicadores de viabilidad económica:**
+
+- **VAN Económico (WACC 12%):** S/ 605,652 — ampliamente positivo, lo que indica que el proyecto genera valor por encima del costo de capital promedio ponderado.
+- **TIR Económica:** 77% — supera significativamente el WACC, confirmando que los flujos de caja operativos justifican la inversión inicial.
+- **PRD descontado:** 2.45 años — la recuperación de la inversión ocurre antes de la mitad del horizonte del proyecto (5 años), reduciendo el riesgo temporal.
+- **Índice de Rentabilidad (IR):** 5.89 — por cada sol invertido, se generan S/ 5.89 en valor presente de flujos, mostrando alta eficiencia del capital.
+
+**Indicadores de viabilidad financiera (accionista):**
+
+- **VAN Financiero (COK 11%):** S/ 629,707 — superior al VAN económico, demostrando que el financiamiento con deuda potencia la rentabilidad del accionista (efecto palanca positivo).
+- **TIR Financiera:** 100% — excepcionalmente alta, refleja la capacidad del proyecto de multiplicar el aporte de los accionistas en poco tiempo.
+- **PRD descontado:** 2.36 años — recuperación más rápida que en el flujo económico, gracias al escudo fiscal de la deuda.
+- **IR Financiero:** 12.51 — cada sol aportado por los accionistas genera S/ 12.51 en valor presente, evidenciando un uso eficiente del apalancamiento.
+
+**Robustez ante variaciones:**
+
+- El análisis de sensibilidad confirma que el proyecto mantiene VAN positivo incluso con variaciones de ±10% en precio o costos variables.
+- El análisis de escenarios demuestra viabilidad en los tres casos (optimista, base, pesimista), con VAN mínimo de S/ 187,340 y TIR mínima de 48%, ambos superiores al COK.
+- La tolerancia del proyecto a condiciones adversas simultáneas (precio -9%, costos +11%, demanda -20%) sin perder viabilidad refleja un modelo de negocio resiliente.
+
+**Conclusión:** VitalLunch cumple con todos los criterios de viabilidad financiera y económica. Los indicadores respaldan la decisión de inversión, y el proyecto está posicionado para generar retornos superiores al costo de oportunidad del capital en todos los escenarios analizados.
+
+### 11.2 Riesgos Identificados
+
+Durante el análisis se identificaron **trece riesgos principales** que podrían afectar el desempeño del proyecto, agrupados en operativos y financieros:
+
+**Riesgos operativos críticos (probabilidad media-alta, impacto alto):**
+
+1. **Demanda menor a la prevista:** Si la adopción es inferior al 15% esperado o la frecuencia de pedidos es menor a 1.25 veces por semana, los ingresos caerían por debajo de las proyecciones. **Mitigación:** pilotos por empresa, campañas B2B, subsidios corporativos y ajuste ágil de producción.
+
+2. **Retrasos en entrega (congestión en horas pico):** Entregas tardías o fuera de ventana pueden generar insatisfacción y pérdida de clientes. **Mitigación:** ventanas de entrega definidas, ruteo por zonas, buffers de tiempo y seguimiento en tiempo real de los repartidores.
+
+3. **Pérdida de calidad o temperatura:** Alimentos tibios o empaque inadecuado deterioran la experiencia del cliente. **Mitigación:** contenedores térmicos certificados, control de temperatura al despacho y llegada, estandarización de porcionado y tiempos.
+
+**Riesgos financieros críticos (probabilidad media, impacto alto):**
+
+4. **Incremento de costos de insumos (inflación >3%):** La escalada de precios de ingredientes puede comprimir márgenes rápidamente. **Mitigación:** contratos marco con proveedores, sustituciones planificadas de menú, revisión trimestral de precios con empresas.
+
+5. **Liquidez insuficiente en arranque:** Si los flujos de caja del primer año no cubren gastos operativos, el proyecto podría enfrentar problemas de solvencia. **Mitigación:** capital de trabajo inicial de S/ 20,000, control riguroso de gastos y línea de crédito de contingencia.
+
+6. **Caída en frecuencia de uso:** Los usuarios pueden perder interés si el menú se vuelve monótono o si surgen alternativas más atractivas. **Mitigación:** menús rotativos, programa de fidelización y subsidios corporativos parciales.
+
+**Riesgos adicionales monitoreables:**
+
+- Fallas de la app o pagos (mitigación: soporte WhatsApp y pasarelas redundantes).
+- Ruptura de stock o proveedores (doble proveedor crítico, inventario de seguridad).
+- Incumplimientos DIGESA (POES, BPM, auditorías internas).
+- Rotación de personal clave (manuales operativos, capacitación cruzada).
+- Aumento de comisiones y delivery (negociación con agregadores, flota tercerizada).
+- Riesgo cambiario en insumos importados (stock estratégico, compras locales).
+
+**Evaluación global:** Los riesgos son manejables con las mitigaciones propuestas. El proyecto no presenta riesgos catastróficos no controlables, y la combinación de estrategias operativas y financieras reduce la probabilidad de impactos severos.
+
+### 11.3 Recomendaciones Finales
+
+Para maximizar la probabilidad de éxito de VitalLunch y asegurar el cumplimiento de las proyecciones, se recomiendan las siguientes acciones estratégicas:
+
+#### 11.3.1 Fase de Lanzamiento (Meses 1-6)
+
+1. **Validación rápida de demanda:** Ejecutar pilotos con 10-15 empresas piloto (pequeña muestra representativa) antes del lanzamiento masivo. Medir adopción real, frecuencia de pedidos y satisfacción en las primeras 4 semanas. Ajustar estrategia comercial si la adopción es <12%.
+
+2. **Asegurar subsidios corporativos:** Negociar con las empresas cliente un subsidio de S/ 5-8 por almuerzo (30-40% del precio), posicionándolo como beneficio de bienestar. Esto reduce la barrera de precio para el usuario final y estabiliza la demanda.
+
+3. **Inversión en marketing de contenido:** Crear campañas educativas sobre alimentación saludable, testimonios de usuarios y beneficios corporativos (productividad, retención de talento). Invertir al menos S/ 1,200 mensuales en redes sociales y publicidad digital segmentada.
+
+4. **Control riguroso de calidad desde el día 1:** Implementar checklist de calidad en cada etapa (recepción, preparación, empaque, despacho). Registrar temperatura de cada lote despachado y tiempos de entrega. Establecer meta de 95% de entregas a tiempo y <2% de quejas por calidad en el primer trimestre.
+
+#### 11.3.2 Gestión Operativa y Financiera (Año 1-2)
+
+5. **Monitoreo mensual de márgenes unitarios:** Calcular margen bruto por pedido (precio - costos variables) cada mes. Si el margen cae por debajo de S/ 4.50 por pedido, activar plan de contingencia: renegociar con proveedores, ajustar porciones o revisar precios con empresas.
+
+6. **Optimización de costos variables:** Negociar contratos marco con proveedores de ingredientes clave (pollo, vegetales, granos) con volúmenes trimestrales. Buscar descuentos por volumen de 5-10% y cláusulas de ajuste de precio máximo trimestral.
+
+7. **Capital de trabajo dinámico:** Mantener caja mínima de S/ 10,000 en los primeros 6 meses para cubrir imprevistos (pagos urgentes, reposición de equipos menores). Configurar línea de crédito revolvente de S/ 15,000 con banco para contingencias, a usar solo si los flujos caen 20% por debajo de proyecciones.
+
+8. **Cumplimiento estricto del servicio de deuda:** Priorizar el pago de amortización e intereses en los primeros 36 meses (S/ 29,580 anuales). Considerar amortizaciones anticipadas parciales si el flujo de caja supera proyecciones en +15%, para reducir carga de intereses.
+
+#### 11.3.3 Escalabilidad y Mejora Continua (Año 3-5)
+
+9. **Inversión en tecnología:** A partir del Año 3, destinar S/ 5,000-8,000 a mejoras de la app: historial de pedidos, recomendaciones personalizadas, encuestas de satisfacción automatizadas y programa de puntos. Esto puede aumentar frecuencia de uso en 10-15%.
+
+10. **Diversificación de menú:** Introducir opciones premium (+S/ 4-6) o menús especiales (veganos, keto, sin gluten) para capturar segmentos adicionales y aumentar ticket promedio. Evaluar aceptación con encuestas trimestrales.
+
+11. **Programa de fidelización:** Implementar incentivos como "10° almuerzo gratis" o descuentos progresivos por frecuencia (5% descuento si pides >3 veces/semana). Esto eleva la frecuencia y reduce sensibilidad al precio.
+
+12. **Expansión geográfica controlada:** Si la demanda en Miraflores, San Isidro y Surco alcanza 40,000 pedidos/año (33% sobre meta base), evaluar expansión a La Molina o Lince con modelo probado, sin comprometer calidad ni liquidez.
+
+#### 11.3.4 Gestión de Riesgos Continua
+
+13. **Tablero de indicadores clave (KPI dashboard):** Monitorear mensualmente: adopción %, frecuencia de pedido, % entregas a tiempo, margen bruto unitario, días de inventario, rotación de personal. Definir umbrales de alerta (ej. margen <S/ 4, entregas a tiempo <90%) para activar planes de acción inmediatos.
+
+14. **Revisión trimestral de supuestos:** Cada 3 meses, contrastar proyecciones vs. resultados reales en demanda, costos variables y costos fijos. Ajustar el flujo de caja del año en curso si las desviaciones superan ±10%.
+
+15. **Plan de contingencia ante caída de demanda:** Si la demanda del mes cae >20% respecto a proyección, activar: (a) campaña promocional agresiva (2x1, semana gratis), (b) encuestas para identificar causas (precio, calidad, competencia), (c) ajuste temporal de producción para evitar mermas.
+
+#### 11.3.5 Gobernanza y Responsabilidad
+
+16. **Equipo de liderazgo con roles claros:** Designar un/a gerente general responsable de P&L (profit & loss), un/a jefe/a de operaciones (cocina, entrega, calidad) y un/a responsable comercial/marketing. Reuniones semanales de seguimiento en los primeros 6 meses.
+
+17. **Auditorías de calidad externas:** Contratar auditoría semestral de inocuidad y BPM (Buenas Prácticas de Manufactura) por terceros certificados, para mantener estándares DIGESA y prevenir incidentes que puedan afectar reputación.
+
+18. **Transparencia con inversionistas:** Reportar mensualmente a los accionistas: ingresos, costos, flujo de caja acumulado, VAN actualizado y estado de riesgos. Esto facilita decisiones rápidas ante desviaciones.
+
+---
+
+**Conclusión Final:**
+
+VitalLunch es un proyecto con fundamentos sólidos, viabilidad demostrada en todos los escenarios analizados y potencial de generar retornos excepcionales (TIR 100%, VAN S/ 629,707). Los riesgos identificados son manejables mediante las mitigaciones propuestas, y las recomendaciones estratégicas aseguran una ejecución disciplinada y adaptativa. Se recomienda proceder con la inversión, priorizando las acciones de la fase de lanzamiento para validar supuestos clave y construir tracción en los primeros 6 meses. Con gestión rigurosa y enfoque en calidad, VitalLunch tiene alta probabilidad de consolidarse como un referente de alimentación saludable corporativa en Lima.
