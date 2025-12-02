@@ -1,13 +1,11 @@
 # UNIVERSIDAD DE INGENIERÍA Y TECNOLOGÍA
 
-## Informe escrito - Examen Parcial
+## Informe Final
 
 ### AUTOR(ES)
 
 - Campos Dominguez Fatima Guadalupe Eumelia 100%
 - Huerta Roque Francis Andres 100%
-- Sebastian Alejandro Esponda Guizado 100%
-- Barrantes Chuquimia Arturo 100%
 
 ### DOCENTE
 
